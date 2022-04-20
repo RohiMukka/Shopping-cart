@@ -1,0 +1,271 @@
+body{
+    padding-top: 60px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-star,
+.fa-star-half{
+    color:goldenrod;
+    padding: 3% 0;
+}
+
+#cart_count{
+    text-align:center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius:3rem;
+}
+
+.shopping-cart{
+    padding: 3% 0;
+}
+
+.cart-items + .cart-items{
+    padding: 2% 0;
+}
+
+.price-details h6{
+    padding: 3% 2%;
+}
+
+.laptopBg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: white;
+    margin: 40px auto;
+  }
+  #slider-in-laptop {
+    width: 100%;
+    height: 100%;
+    padding: 2% 15% 8.5%;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .videoProm {
+    position: absolute;
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    width: 905px;
+    z-index: 99;
+  }
+  .imgBg {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+  }
+  .swiper-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* table */
+
+  th {
+    position: sticky; /* Make th sticky to avoid JavaScript */
+    z-index: 1;
+    border: 1px solid;
+    top: 0;
+  }
+  td,
+  th {
+    padding: 10px;
+    min-width: 200px; /* Add a minimum width below which no resize is allowed (for small screens). It can be whatever serves the design best */
+    text-align: center;
+  }
+  .products-4 th,
+  .products-4 td {
+    width: 25%; /* Depending on the number of products in comparison, different classes should be used (e.g. 3 products should have a .products-3 class with a width of 33.333%) */
+  }
+  th {
+    background: #eee;
+    top: -2px; /* We need this to attach the "stuck" attribute */
+  }
+  th img {
+    height: 0;
+    margin: 0 auto;
+    display: block;
+    transition: height 200ms ease-in-out;
+  }
+  .sticky img {
+    height: 100px;
+  }
+  .label {
+    font-weight: bold;
+    text-align: left;
+    min-width: 150px; /* Labels should have a strict width, based on the design (150px is just for this demo) */
+    width: 150px; /* In order to enforce the width we need to apply both a min-width and a width with the same value */
+    background: #eee;
+  }
+  th.label {
+    background: #fff;
+    border-color: #fff;
+  }
+
+  .heading {
+    background: #ccc;
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+  .heading span {
+    position: sticky;
+    top: 0;
+    left: 10px;
+  }
+  @media all and(max-width: 600px) {
+    /* The breakpoint is indicative. You might want to break it on a different limit */
+    body {
+      padding: 0; /* Just for the demo */
+    }
+    .label {
+      display: none; /* We want to hide the labels on small screens... */
+    }
+    .spec::before {
+      /* ...and show them above each spec instead. */
+      content: attr(spec-title);
+      color: #999;
+      display: block;
+    }
+  }
+
+
+  @import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+
+ul.ul-cards {
+    width: min(100%, 60rem);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+}
+ul.ul-cards>li{
+    --bg-color: #F2F2F2;
+    --text-color: #333;
+    --padding: 1rem;
+    --circle-size: 5rem;
+    --circle-expand: 1rem;
+    --flap-height: 1.25rem;
+    --flap-offset: 0.5rem;
+    max-width: 15rem;
+    margin-top: calc(var(--circle-size) / 2 + var(--circle-expand));
+    margin-bottom: var(--flap-offset);
+    background-color: var(--bg-color);
+    background-image: linear-gradient(to bottom left, transparent 50%, rgba(0 0 0  / .125));
+    border-radius: var(--padding);
+    padding: var(--padding);
+
+    --bs-rim: inset -0.1rem 0.1rem 0.1rem rgb(255 255 255 / .5);
+    --bs-card-spread: 0.25rem;
+    --bs-card-color:  rgb(0 0 0 / 0.02);
+    --bs-card: 
+        -0.1rem 0.1rem var(--bs-card-spread) var(--bs-card-color),
+        -0.2rem 0.2rem var(--bs-card-spread) var(--bs-card-color),
+        -0.3rem 0.3rem var(--bs-card-spread) var(--bs-card-color),
+        -0.4rem 0.4rem var(--bs-card-spread) var(--bs-card-color),
+        -0.5rem 0.5rem var(--bs-card-spread) var(--bs-card-color),
+        -0.6rem 0.6rem var(--bs-card-spread) var(--bs-card-color),
+        -0.7rem 0.7rem var(--bs-card-spread) var(--bs-card-color),
+        -0.8rem 0.8rem var(--bs-card-spread) var(--bs-card-color),
+        -0.9rem 0.9rem var(--bs-card-spread) var(--bs-card-color),
+        -1.0rem 1.0rem var(--bs-card-spread) var(--bs-card-color),
+        -1.1rem 1.1rem var(--bs-card-spread) var(--bs-card-color),
+        -1.2rem 1.2rem var(--bs-card-spread) var(--bs-card-color),
+        -1.3rem 1.3rem var(--bs-card-spread) var(--bs-card-color),
+        -1.4rem 1.4rem var(--bs-card-spread) var(--bs-card-color),
+        -1.5rem 1.5rem var(--bs-card-spread) var(--bs-card-color),
+        -1.6rem 1.6rem var(--bs-card-spread) var(--bs-card-color),
+        -1.7rem 1.7rem var(--bs-card-spread) var(--bs-card-color),
+        -1.8rem 1.8rem var(--bs-card-spread) var(--bs-card-color),
+        -1.9rem 1.9rem var(--bs-card-spread) var(--bs-card-color);
+    box-shadow: var(--bs-rim), var(--bs-card);
+    display: grid;
+  grid-template-rows: max-content max-content auto ;
+    justify-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    position: relative;
+}
+ul.ul-cards>li>.icon{
+    width: var(--circle-size);
+    margin-top: calc(var(--circle-size) / -2 - var(--padding));
+    aspect-ratio: 1;
+    background-color: var(--bg-color);
+    justify-self: center;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow:var(--bs-rim), -0.1rem 0.1rem 0.25rem rgb(0 0 0 / .25);
+}
+ul.ul-cards>li>.icon>i{
+    font-size: calc(var(--circle-size) / 3);
+    color: var(--accent-color);
+}
+ul.ul-cards>li>.title{
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+ul.ul-cards>li>.content{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-color)
+}
+ul.ul-cards>li::before, ul>li::after{
+    content: "";
+    position: absolute;
+}
+ul.ul-cards>li::before{
+    top: calc(var(--circle-size) / -2 - var(--circle-expand));
+    width: calc(var(--circle-size) * 1 + var(--circle-expand) * 2);
+    height: calc(100% + var(--circle-size) / 2 + var(--padding) + var(--flap-offset)) ;
+    background-color: var(--accent-color);
+    background-image: linear-gradient( transparent 50%, rgb(0 0 0 / .25) 0);
+    border-top-left-radius: calc(var(--circle-size) / 2 + var(--circle-expand));
+    border-top-right-radius: calc(var(--circle-size) / 2 + var(--circle-expand));
+    clip-path: polygon(
+      0 0, 
+      100% 0, 
+      100% calc(100% - var(--flap-offset)), 
+      calc(100% - var(--flap-offset)) 100%, 
+      var(--flap-offset) 100%,  
+      0 calc(100% - var(--flap-offset))
+    );
+    z-index: -1;
+}
+ul.ul-cards>li::after{
+    width: calc(var(--circle-size) * 1 + var(--circle-expand) * 2 - var(--flap-offset) * 2);
+    height: var(--flap-height);
+    bottom: calc(var(--flap-offset) * -1);
+    border-top-left-radius: var(--flap-height);
+    border-top-right-radius: var(--flap-height);
+    background-color: var(--accent-color);
+}
